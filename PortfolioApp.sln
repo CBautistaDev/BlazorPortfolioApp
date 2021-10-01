@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortfolioApp", "PortfolioApp.csproj", "{4B95357F-CA25-454F-9CCD-6DAD403F4549}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanyAPI", "..\BethanyAPI\BethanyAPI.csproj", "{360C135A-B29C-4C41-88CC-5D18B3A76DCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B95357F-CA25-454F-9CCD-6DAD403F4549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B95357F-CA25-454F-9CCD-6DAD403F4549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B95357F-CA25-454F-9CCD-6DAD403F4549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B95357F-CA25-454F-9CCD-6DAD403F4549}.Release|Any CPU.Build.0 = Release|Any CPU
+		{360C135A-B29C-4C41-88CC-5D18B3A76DCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{360C135A-B29C-4C41-88CC-5D18B3A76DCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{360C135A-B29C-4C41-88CC-5D18B3A76DCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{360C135A-B29C-4C41-88CC-5D18B3A76DCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85984FF3-EB20-420F-8C70-9D72BB0957C9}
+	EndGlobalSection
+EndGlobal
