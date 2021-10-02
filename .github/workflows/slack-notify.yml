@@ -5,11 +5,12 @@ on:
   workflow_run:
     workflows: ["Deploy to GitHub Pages"]
     types:
+      - requested
       - completed
   
 jobs:
   slackNotification:
-    name: Slack Notification
+    name: GH Scale Up Started
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
