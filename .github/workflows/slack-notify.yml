@@ -1,0 +1,26 @@
+name: Slack Notification
+
+# Only trigger, when the build workflow succeeded
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - requested
+      - completed
+  
+jobs:
+  slackNotification:
+    name: GH Scale Up Started
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_ICON: https://th.bing.com/th/id/OIP.T41aAOhgX-pnfJ8uPE9pcgHaGs?pid=ImgDet&rs=1
+        SLACK_TITLE: GH Action Has Been Started
+        SLACK_MESSAGE: Please Check Datadog that all services have been scaled up
+        SLACK_USERNAME: GH
+        
+  
