@@ -7,5 +7,7 @@ namespace PortfolioApp.Pages
 {
     public partial class Projects
     {
+
+
     }
 }
