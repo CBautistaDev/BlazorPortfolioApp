@@ -18,5 +18,9 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+        SLACK_ICON: https://th.bing.com/th/id/OIP.T41aAOhgX-pnfJ8uPE9pcgHaGs?pid=ImgDet&rs=1
+        SLACK_TITLE: GH Action Has Been Started
+        SLACK_MESSAGE: Please Check Datadog that all services have been scaled up
+        SLACK_USERNAME: GH
         
   
