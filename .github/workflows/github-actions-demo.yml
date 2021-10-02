@@ -1,15 +1,20 @@
-name: Reusable workflow example
-
+name: Manually triggered workflow
 on:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '32 12 * * *'
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
 
-  
 jobs:
-  print-username:
+  say_hello:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Print the input name to STDOUT
-        run: echo The username is ${{ inputs.username }}
+      - run: |
+          echo "Hello ${{ github.event.inputs.name }}!"
+          echo "- in ${{ github.event.inputs.home }}!"
