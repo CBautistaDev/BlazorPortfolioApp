@@ -1,7 +1,12 @@
+name: Slack Notification
+
+# Only trigger, when the build workflow succeeded
 on:
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - completed
   
-name: Slack Notification Demo
 jobs:
   slackNotification:
     name: Slack Notification
